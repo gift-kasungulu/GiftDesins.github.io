@@ -233,6 +233,11 @@
         .service-card:hover {
             transform: translateY(-5px);
         }
+
+        h3 {
+            text-align: center;
+   
+}
         
         .service-icon {
             font-size: 2.5rem;
@@ -282,6 +287,35 @@
             text-align: center;
             padding: 2rem;
         }
+
+        .portfolio-category {
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-row {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+        scrollbar-width: none;
+    }
+
+    .portfolio-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .portfolio-item {
+        min-width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
         
         @media (max-width: 768px) {
             .hero h1 {
@@ -324,66 +358,31 @@
             <h2>Portfolio</h2>
             <p>A showcase of my creative work across various design disciplines</p>
         </div>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="Images/kelogosh2.jpg" alt="Brand Identity">
-                    <div class="portfolio-overlay">
-                        <h3>Brand Identity</h3>
-                        <p>Complete brand identity design including logo, color palette, and brand guidelines.</p>
-                        <a href="https://web.facebook.com/profile.php?id=100076270299942" class="btn">View Project</a>
-                    </div>
-                </div>
+        
+        <div class="portfolio-category">
+            <h3>Logos</h3>
+            <div class="portfolio-row">
+                <div class="portfolio-item"><img src="Images/BriStyle logo.jpg" alt="Logo 1"></div>
+                <div class="portfolio-item"><img src="Images/uniqe2 Logo.jpg" alt="Logo 2"></div>
+                <div class="portfolio-item"><img src="Images/UNIQUE B3 logo.jpg" alt="Logo 3"></div>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="Images/UNCLE CHIMBALIS.jpg" alt="Marketing Materials">
-                    <div class="portfolio-overlay">
-                        <h3>Marketing Materials</h3>
-                        <p>Digital and print marketing collateral designed to engage and convert.</p>
-                        <a href="https://web.facebook.com/profile.php?id=100076270299942" class="btn">View Project</a>
-                    </div>
-                </div>
+        </div>
+    
+        <div class="portfolio-category">
+            <h3>Social Media Graphics</h3>
+            <div class="portfolio-row">
+                <div class="portfolio-item"><img src="Images/We are Open KE.jpg" alt="Social Media 1"></div>
+                <div class="portfolio-item"><img src="Images/Vees Makeup 1.jpg" alt="Social Media 2"></div>
+                <div class="portfolio-item"><img src="Images/Quck-Fin.jpg" alt="Social Media 3"></div>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="Images/QuckFin.jpg" alt="Social Media Design">
-                    <div class="portfolio-overlay">
-                        <h3>Social Media Design</h3>
-                        <p>Engaging social media graphics that capture attention and drive engagement.</p>
-                        <a href="https://web.facebook.com/profile.php?id=100076270299942" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="Images/soon.jpg" alt="UI/UX Design">
-                    <div class="portfolio-overlay">
-                        <h3>UI/UX Design</h3>
-                        <p>User-centered interface designs that enhance digital experiences.</p>
-                        <a href="https://web.facebook.com/profile.php?id=100076270299942" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="Images/Apostle chris Mpanzi.jpg" alt="Print Design">
-                    <div class="portfolio-overlay">
-                        <h3>Print Design</h3>
-                        <p>Professional print materials that make a lasting impression.</p>
-                        <a href="https://web.facebook.com/profile.php?id=100076270299942" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="Images/EveeLoans.jpg" alt="Digital Art">
-                    <div class="portfolio-overlay">
-                        <h3>Other (Social Media)</h3>
-                        <p>Creative social media ads for various applications.</p>
-                        <a href="https://web.facebook.com/profile.php?id=100076270299942" class="btn">More</a>
-                    </div>
-                </div>
+        </div>
+    
+        <div class="portfolio-category">
+            <h3>Print Designs</h3>
+            <div class="portfolio-row">
+                <div class="portfolio-item"><img src="Images/phone accessories & more.jpg" alt="Print Design 1"></div>
+                <div class="portfolio-item"><img src="Images/Prayer & Fasting.jpg" alt="Print Design 2"></div>
+                <div class="portfolio-item"><img src="Images/PS4 RENTING.jpg" alt="Print Design 3"></div>
             </div>
         </div>
     </section>
